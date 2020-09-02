@@ -1,0 +1,333 @@
+<!DOCTYPE HTML>
+
+<!--head- Googlefonts link-->
+<script src="https://fonts.google.com/"></script>
+
+
+
+<!--CSS code -->
+
+<style>
+	header{
+		background-color: #F5EEF8;
+		color: white;
+		padding: center;
+		margin: center;
+	}
+
+	body{
+		font-family: 'Anaheim';
+		font-size: 1.2em;
+		background-color: #F5EEF8;
+	}
+
+	h1{
+		font-size: 15.em;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	#outside{
+		background-color: #F5EEF8;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	form{
+		margin: 0 auto; /* adjust to center the form on page*/
+		width: 70%;
+		padding: 1em;
+		border: 1px solid #CCC;
+		border-radius: 1em;
+	}
+
+
+
+
+
+	#survey-form{
+		background-color:#D7BDE2;
+			}
+
+
+	fieldset{
+		border: 1px solid white;
+		margin: 10px;
+		color:black;
+	}
+
+	legend{
+		font-weight: 700;
+	}
+
+	#content{
+		font-size: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+
+	textarea{
+		vertical-align: top;
+		height:5em;
+		resize: vertical;
+
+	}
+
+	.button{
+		padding-left: 90px;
+
+	}
+
+	button{
+		margin:.5em;
+		font-size: 1em;
+		text-transform: capitalize;
+		background-color: #A569BD ;
+		color: white;
+		border: none;
+		padding:5px;
+		border-radius: 2px;
+	}
+
+	#submit-button{
+		display: flex;
+		justify-content: center;
+	}
+</style>
+
+<!-- HTML code-->
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+		<h1 id="header">Quiz Time for my Boo <span style='font-size: 30px;'>&#129409;</span></h1>
+		<p id ="content"><code>Let's show your partner how much you love her </code><span style='font-size: 15px;'>!&#128525;</span></p>
+</form>
+<!-- Personal Details -->
+</div>
+
+<div id="outside">
+<form id="survey-form" action="/my-handling-form-page" method="post">
+<fieldset>
+	<!--groups of widgets that share same purpose for styling and semantic purposes -->
+	<legend>Personal Details</legend>
+	<div>
+		<label id="name-label" for="name">Your Name: </label>
+		<input type="text" required id="name" name="user-name" placeholder="Enter the name">
+	</div>
+
+	<div>
+		<label id="her-name" for ="her-name">Her Name: </label>
+		<input type ="text" required id="her-name" address="user-name" placeholder="Enter the name">
+	</div>
+
+	<div>
+		<label id="phone-number" for ="phone">Your phone number</label>
+		<input type="text" required id="phone" phone="user-phone-number" placeholder="Enter your phone number">
+	</div>
+<!--Button-->
+
+<div>
+	<label id="status" for= "status-checker">Single or Taken?</label>
+	<p>
+		<input type="radio" name="Status-Relationship" value="Single">Single<br>
+		<input type="radio" name="Status-Relationship" value="Taken">Taken<br>
+		<input type="radio" name="Status-Relationship" value="Other">Other
+	</p>
+</div>
+
+<div>
+<label>Date of Today</label>
+<input type="date" name="day">
+</div>
+</fieldset>
+
+<fieldset>
+	<legend>Multiple Choice Questions</legend>
+	<div>
+		<label id="confess-date" for="first-date">1. When is your anniversary?</label>
+		<p>
+			<input type="radio" name="confession" value="Sept 30th">Sept 30th
+			<input type="radio" name="confession" value="Aug 29th" >Aug 29th<br>
+			<input type="radio" name="confession" value="Oct 31st">Oct 31st
+			<input type="radio" name="confession" value="Nov 11th">Nov 11th
+		</p>
+	</div>
+
+	<div>
+		<label id="love-or-not" for="feeling">2. Do you love her?</label>
+		<p>
+			<input type="radio" name="love-hate" value="love">Yes, I love you<br>
+			<input type="radio" name="love-hate" value="like">Hmm, I like you as a friend<br>
+			<input type="radio" name="love-hate" value="no">No, I do not love you<br>
+			<input type="radio" name="love-hate" value="think">I need more time
+		</p>
+	</div>
+
+	<div>
+		<label id="animal" for="first-date-animal">3. On our first date, what animal was your partner? </label>
+		<p>
+			<input type="radio" name="animal-like" value="cute-cuddle">Panda, Cute and cuddly<br>
+			<input type="radio" name="animal-like" value="tiger">Tiger, brave and courageous<br>
+			<input type="radio" name="animal-like" value="turtle">Turtle, afraid to make the first move<br>
+			<input type="radio" name="animal-like" value="octopus">Octopus...need me to say more?
+		</p>
+	</div>
+
+	<div>
+		<label id="color" for="fav-color">4. Is<b> green</b> your partner's favorite color?</label>
+		<p>
+			<input type="radio" name="favorite-color" value ="yes">YES
+			<input type="radio" name="favorite-color" value="no">NO
+		</p>
+	</div>
+
+	<div>
+		<label id="live-2gether" for="live-together">5. If you and your partner lived together, who would do the dishes?</label>
+		<p>
+			<input type="radio" name="do-dishes" value="Who-cares">Who cares? We have anther interesting to worry about instead.<br>
+			<input type="radio" name="do-dishes" value="something cuter">We can make it turn into something cuter-she dries, I wash or vice versa<br>
+			<input type="radio" name="do-dishes" value="He does">Definitely me-David. I do not want to pay for manicures<br>
+			<input type="radio" name="do-dishes" value="she does">Well, that is the task for females.
+		</p>
+	</div>
+	<div>
+		<label id="sorry" for="open-to-sorry">6. Are you open to saying sorry to make your partner/others feel good even if it's not your fault?</label>
+		<p>
+			<input type="radio" name="open-sorry" value="Yes">I am willing to. Well, women is an emotional animal and that's why men is born<br>
+			<input type="radio" name="open-sorry" value="No">I will never do so. If she did something wrong, it was her fault and she had responsibility for saying sorry to me<br>
+		</p>
+	</div>
+</fieldset>
+<!-- Checkboxs-->
+<fieldset>
+		<legend>Check All That Apply</legend>
+		<label for="fav-things-to-do">* What do I love to do while spending time with my love?</label>
+		<p>
+			<input type="checkbox" name="discover" value="dicover">Discover new destinations together<br>
+			<input type="checkbox" name="hiking" value="hiking">Go for a walk having small conversations or Go hiking<br>
+			<input type="checkbox" name="cooking" value="cook">Cook your/our favourite take-out meal<br>
+			<input type="checkbox" name="stay-home" value="stay">Stay at home and chill together<br>
+			<input type="checkbox" name="air-plane mode" value="air-plane">Put our phone away for an entire day so we can just focus on each other<br>
+			<input type="checkbox" name="bucket-list" value="bucket-list">Make a bucket list of things we want to do together<br>
+			<input type="checkbox" name="news" value="news">Read the news together<br>
+			<input type="checkbox" name="cake" value="cake">Make any kind of cakes together<br>
+			<input type="checkbox" name="gym" value="gym">Hit the gym<br>
+			<input type="checkbox" name="picnic" value="picnic">Go on a picnic<br>
+			<input type="checkbox" name="shopping" value="shopping">Go shopping<br>
+			<input type="checkbox" name="more" value="more">What given above is not enough. I will text you more about what you want to do with me together*wink*
+		</p>
+</fieldset>
+
+<fieldset>
+	<legend>Short Answer Questions</legend>
+	<div>
+		<label for="msg"></label>
+		<p>1. What does a balanced relationship look like to you? </p>
+		<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+
+	<div>
+		<label for="msg"></label>
+		<p>2. What is the main thing that you think makes a relationship last?</p>
+		<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+
+	<div>
+		<label for="msg"></label>
+		<p>3. Are you satisfied with our chemistry and intimacy?</p>
+		<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+
+	<div>
+		<label for="msg"></label>
+		<p>4. Are there any conflicts that we’ve had in the past that you don’t feel are wholly resolved yet?</p>
+		<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+
+	<div>
+		<label for="msg"></label>
+		<p>5. Is there anything you're hesitant to accomplish that I can help you with?</p>
+		<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+	 
+	 <div>
+	 	<label for="msg"></label>
+	 	<p>6. What is something you want to do together that we haven't?</p>
+	 	<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+
+	<div>
+		<label for="msg"></label>
+		<p>7. Is there anything about me that you do not currently know  but you want to?</p>
+		<textarea id="msg" name="user_msg" rows="5" cols="50" placeholder="Enter Text Here My Boo"></textarea>
+	</div>
+</fieldset>
+
+
+</fieldset>
+<!--Submission-->
+<div id="submit-button">
+	<button type="submit" id="submit">Submit</button>
+</div>
+
+</div>
+</form>
+
+
+
+<!--Question lists-->
+<!-- How do you see the future individually and collectively as a couple?
+	 What are your goals for this relationship?
+	 What are some of the highest-valued things on your bucket list?
+	 What is something you want to do together that we haven't?
+	 Is there anything you're hesitant to accomplish that I can help you with?
+	 What is your favorite memory of our relationship?
+	 What is your favorite thing about yourself/me?
+	 What was your favorite part about our first kiss?
+	 What was your favorite date we've had?
+	 What is your favorite TV sitcom/movies?
+	 What is your favorite way to communicate?
+	 Romance
+	 26. What was your first sexual experience?
+
+27. When was the first time you fell in love?
+
+28. What are the things you value most from the beginning of our relationship?
+
+29. When did you first know you wanted to be in a relationship with me?
+
+30. Are you satisfied with our chemistry and intimacy?
+
+31. In which situations do you feel most secure in our relationship?
+
+32. What makes you feel most loved?
+
+33. What is your favorite meal to share for a date night?
+
+34. What physical and emotional gestures do you appreciate most?
+
+35. What song do you think of when you think of me?
+
+36. What is the main thing that you think makes a relationship last?
+
+37. What experiences and situations, whether yours or someone else’s, inspired your philosophy of love?
+
+Extra
+Are there any conflicts that we’ve had in the past that you don’t feel are wholly resolved yet?
+
+What does a balanced relationship look like to you?
+
+What is your idea of a healthy relationship?
+
+Is there anything about me that you don’t currently know but want to?
+
+41. What are some of the things that you are most grateful for?
+
+42. When was the last time you cried?
+
+43. What does a perfect day look like to you?
+
+	Is there anything you would change about yourself?
+-->
