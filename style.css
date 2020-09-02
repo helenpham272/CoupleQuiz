@@ -1,0 +1,91 @@
+<!--CSS code -->
+
+<style>
+	header{
+		background-color: #F5EEF8;
+		color: white;
+		padding: center;
+		margin: center;
+	}
+
+	body{
+		font-family: 'Anaheim';
+		font-size: 1.2em;
+		background-color: #F5EEF8;
+	}
+
+	h1{
+		font-size: 15.em;
+		text-align: center;
+		text-transform: capitalize;
+	}
+
+	#outside{
+		background-color: #F5EEF8;
+		padding-top: 25px;
+		padding-bottom: 25px;
+	}
+
+	form{
+		margin: 0 auto; /* adjust to center the form on page*/
+		width: 70%;
+		padding: 1em;
+		border: 1px solid #CCC;
+		border-radius: 1em;
+	}
+
+
+
+
+
+	#survey-form{
+		background-color:#D7BDE2;
+			}
+
+
+	fieldset{
+		border: 1px solid white;
+		margin: 10px;
+		color:black;
+	}
+
+	legend{
+		font-weight: 700;
+	}
+
+	#content{
+		font-size: 1em;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+
+
+	textarea{
+		vertical-align: top;
+		height:5em;
+		resize: vertical;
+
+	}
+
+	.button{
+		padding-left: 90px;
+
+	}
+
+	button{
+		margin:.5em;
+		font-size: 1em;
+		text-transform: capitalize;
+		background-color: #A569BD ;
+		color: white;
+		border: none;
+		padding:5px;
+		border-radius: 2px;
+	}
+
+	#submit-button{
+		display: flex;
+		justify-content: center;
+	}
+</style>
